@@ -1,4 +1,4 @@
-package com.udemy.myapplication.data
+package com.udemy.myapplication.data.model.movie
 
 import com.google.gson.annotations.SerializedName
 

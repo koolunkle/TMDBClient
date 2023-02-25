@@ -1,4 +1,4 @@
-package com.udemy.myapplication.data
+package com.udemy.myapplication.data.model.artist
 
 import com.google.gson.annotations.SerializedName
 

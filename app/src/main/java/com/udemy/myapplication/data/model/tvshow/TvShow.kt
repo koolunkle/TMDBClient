@@ -1,9 +1,12 @@
-package com.udemy.myapplication.data
+package com.udemy.myapplication.data.model.tvshow
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "popular_tvShows")
 data class TvShow(
-    @SerializedName("first_air_date") val firstAirDate: String?,
+    @PrimaryKey @SerializedName("first_air_date") val firstAirDate: String?,
     @SerializedName("id") val id: Int,
     @SerializedName("name") val name: String?,
     @SerializedName("overview") val overview: String?,

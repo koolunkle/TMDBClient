@@ -1,8 +1,8 @@
 package com.udemy.myapplication.data.api
 
-import com.udemy.myapplication.data.ArtistList
-import com.udemy.myapplication.data.MovieList
-import com.udemy.myapplication.data.TvShowList
+import com.udemy.myapplication.data.model.artist.ArtistList
+import com.udemy.myapplication.data.model.movie.MovieList
+import com.udemy.myapplication.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
