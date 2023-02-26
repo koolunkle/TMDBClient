@@ -1,4 +1,4 @@
-package com.udemy.myapplication.presentation.di.movie
+package com.udemy.myapplication.presentation.movie
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +9,7 @@ import com.udemy.myapplication.R
 import com.udemy.myapplication.data.model.movie.Movie
 import com.udemy.myapplication.databinding.ListItemBinding
 
-class MovieAdapter() : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     inner class MovieViewHolder(private val binding: ListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
