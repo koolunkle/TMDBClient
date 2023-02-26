@@ -13,7 +13,7 @@ interface MovieDao {
     suspend fun saveMovies(movies: List<Movie>)
 
     @Query("DELETE FROM popular_movies")
-    suspend fun deleteAllMovies(movies: List<Movie>)
+    suspend fun deleteAllMovies()
 
     @Query("SELECT * FROM popular_movies")
     suspend fun getMovies(): List<Movie>
