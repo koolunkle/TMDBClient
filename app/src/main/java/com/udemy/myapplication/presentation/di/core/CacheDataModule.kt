@@ -8,9 +8,12 @@ import com.udemy.myapplication.data.repository.tvshow.datasource.TvShowCacheData
 import com.udemy.myapplication.data.repository.tvshow.datasourceImpl.TvShowCacheDatasourceImpl
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class CacheDataModule {
 
     @Singleton

@@ -11,9 +11,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.udemy.myapplication.R
 import com.udemy.myapplication.databinding.ActivityArtistBinding
-import com.udemy.myapplication.presentation.di.Injector
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class ArtistActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityArtistBinding
@@ -28,8 +29,6 @@ class ArtistActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_artist)
-
-        (application as Injector).createArtistSubComponent().inject(this)
 
         artistViewModel = ViewModelProvider(this, factory)[ArtistViewModel::class.java]
 

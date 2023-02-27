@@ -17,9 +17,12 @@ import com.udemy.myapplication.domain.repository.MovieRepository
 import com.udemy.myapplication.domain.repository.TvShowRepository
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class RepositoryModule {
 
     @Singleton
